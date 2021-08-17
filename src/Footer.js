@@ -2,7 +2,7 @@
 function Footer(props) {
     return(
         <div>
-            Alex Grazda
+            Author: Alex Grazda
         </div>
     );
 }
