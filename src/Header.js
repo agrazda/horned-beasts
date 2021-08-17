@@ -1,13 +1,10 @@
 
 function Header(props) {
-    return(
-        <div>
-            <h1>HORNED BEASTS</h1>
-        </div>
-    );
+  return<header>
+    <h1>Title here: {props.title}</h1>
+  </header>;
+ 
 }
-
-
 
 
 export default Header;

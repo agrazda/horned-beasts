@@ -1,10 +1,10 @@
 
-function Footer(props) {
-    return(
-        <div>
-            Author: Alex Grazda
-        </div>
-    );
+function Footer() {
+  return(
+    <div>
+        Author: Alex Grazda
+    </div>
+  );
 }
 
 
