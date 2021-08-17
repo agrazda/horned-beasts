@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+## My Time Estimates
+### Lab 02 
+1. Number and name of feature: Feature #1: Display images
+2. Estimate of time needed to complete: 1hr
+3. Start time: 4:23pm
+4. Finish time: 
+5. Actual time needed to complete:
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
