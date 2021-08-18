@@ -6,6 +6,14 @@
 4. Finish time: 5:45pm
 5. Actual time needed to complete:1hr 22min with a ton of help from Chance and HEXX
 
+---------------------------------------------------------------------------
+
+1. Number and name of feature: Feature #2: Allow users to vote for their favorite beast
+2. Estimate of time needed to complete: 1hr
+3. Start time: 9:47pm
+4. Finish time: 
+5. Actual time needed to complete:
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
