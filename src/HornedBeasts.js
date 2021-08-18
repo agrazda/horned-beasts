@@ -15,12 +15,24 @@ import Button from 'react-bootstrap/Button';
 //   }
 // }
 
-// addToFavorites = () => {
-//   this.props.myfavs(+1);
-// };
 
 
 class HornedBeast extends React.Component {
+  constructor(props){
+    super(props);
+    this.state= {
+      favCounter: 0
+    };
+  }
+
+  addToFavorites = () => {
+    this.setState({favCounter: this.state.favCounter +1});
+  }
+
+  deleteFavorites = () => {
+    this.setState({favCounter: this.state.favCounter -+1});
+  }
+
   render() {
     return(
       <>
@@ -29,9 +41,13 @@ class HornedBeast extends React.Component {
             <Card.Title><h2>{this.props.title}</h2></Card.Title>
             <Card.Img onClick={this.addToFavorites} variant="top" src={this.props.image_url} alt={this.props.title} />
             <Card.Text>
-              {this.props.description}
+              <p>{this.props.description}</p>
             </Card.Text>
             <Button onClick={this.addToFavorites} variant="primary">Add to Favorites</Button>
+            <Button onClick={this.deleteFavorites} variant="primary">Delete Favorites</Button>
+            <Card.Text>
+              Favorites: {this.state.favCounter} 
+            </Card.Text>
           </Card.Body>
         </Card>
       </>
