@@ -3,8 +3,8 @@
 1. Number and name of feature: Feature #1: Display images
 2. Estimate of time needed to complete: 1hr
 3. Start time: 4:23pm
-4. Finish time: 
-5. Actual time needed to complete:
+4. Finish time: 5:45pm
+5. Actual time needed to complete:1hr 22min with a ton of help from Chance and HEXX
 
 ## Getting Started with Create React App
 
