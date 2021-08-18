@@ -11,7 +11,7 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state= {
-      beastImages: beastImages, 
+      beastImages: beastImages,
     };
   }
   render(){
@@ -24,5 +24,9 @@ class App extends React.Component {
     );
   }
 }
+
+// Modal
+// Modal is an Alert
+// Modal must have show = Modal show={true} - to show on page
 
 export default App;
