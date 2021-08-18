@@ -1,9 +1,9 @@
 
 function Footer() {
   return(
-    <div>
-        Author: Alex Grazda
-    </div>
+    <>
+      <h3>Author: Alex Grazda</h3>
+    </>
   );
 }
 
