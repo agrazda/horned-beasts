@@ -1,44 +1,53 @@
 import React from 'react';
 import HornedBeast from './HornedBeasts';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+
+
 
 class Main extends React.Component {
   render() {
     return (
-      <>
-        {
-          this.props.beastImages.map((beast, idx)=>(
-            <HornedBeast
-              title={beast.title}
-              image_url={beast.image_url}
-              description={beast.description}
-              key={idx}
-              index={idx}
-            />
-          ))
-        }
-      </>
+      <Container>
+        <Row xs={1} md={2} lg={3} xl={4} className="g-4">
+          {this.props.beastImages.map((beast, idx)=>(
+            <Col>
+              <HornedBeast
+                title={beast.title}
+                image_url={beast.image_url}
+                description={beast.description}
+                key={idx}
+                index={idx}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     );
   }
 }
 
-// class BeastRow extends React.Component {
+// class Main extends React.Component {
 //   render() {
-//     return(
-//       <row>
-//         <col></col>
-//         <col></col>
-//         <col></col>
-//         <col></col>
-//         <col></col>
-//       </row>
+//     return (
+//       <>
+//         {
+//           this.props.beastImages.map((beast, idx)=>(
+//             <HornedBeast
+//               title={beast.title}
+//               image_url={beast.image_url}
+//               description={beast.description}
+//               key={idx}
+//               index={idx}
+//             />
+//           ))
+//         }
+//       </>
 //     );
 //   }
 // }
 
-/*
-  print out index 0-4
-  print out index 5-9
-*/
 // class BeastImage extends Component {
 
 //     constructor(props){
