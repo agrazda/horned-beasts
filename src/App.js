@@ -4,6 +4,7 @@ import Main from './Main';
 import Footer from './Footer';
 import React from 'react';
 import beastImages from './data.json';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
