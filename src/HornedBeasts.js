@@ -46,7 +46,7 @@ class HornedBeast extends React.Component {
             <Button onClick={this.addToFavorites} variant="primary">Add to Favorites</Button>
             <Button onClick={this.deleteFavorites} variant="primary">Delete Favorites</Button>
             <Card.Text>
-            ❤️ Favorites: {this.state.favCounter} 
+            ❤️ Favorites: {this.state.favCounter}
             </Card.Text>
           </Card.Body>
         </Card>
