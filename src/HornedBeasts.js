@@ -33,18 +33,20 @@ class HornedBeast extends React.Component {
     this.setState({favCounter: this.state.favCounter -1});
   }
 
+
+
   render() {
     return(
       <>
         <Card style={{ width: '18rem' }}>
           <Card.Body>
             <Card.Title><h2>{this.props.title}</h2></Card.Title>
-            <Card.Img onClick={this.addToFavorites} variant="top" src={this.props.image_url} alt={this.props.title} />
+            <Card.Img onClick={() => this.props.openHandler({title: this.props.title, description: this.props.description, image_url: this.props.image_url})} variant="top" src={this.props.image_url} alt={this.props.title} />
             <Card.Text>
               <p>{this.props.description}</p>
             </Card.Text>
-            <Button onClick={this.addToFavorites} variant="primary">Add to Favorites</Button>
-            <Button onClick={this.deleteFavorites} variant="primary">Delete Favorites</Button>
+            <p><Button onClick={this.addToFavorites} variant="primary">I Love it!</Button></p>
+            <Button onClick={this.deleteFavorites} variant="primary">I hate it!</Button>
             <Card.Text>
             ❤️ Favorites: {this.state.favCounter}
             </Card.Text>
