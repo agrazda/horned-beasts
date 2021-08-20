@@ -20,6 +20,7 @@ class Main extends React.Component {
                 description={beast.description}
                 key={idx}
                 index={idx}
+                openHandler= {this.props.openHandler}
               />
             </Col>
           ))}
