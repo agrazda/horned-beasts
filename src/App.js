@@ -6,6 +6,7 @@ import React from 'react';
 import beastImages from './data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SelectedBeast from './SelectedBeast';
+import FormBeasts from './FormBeasts';
 
 
 
@@ -34,6 +35,7 @@ class App extends React.Component {
     return (
       <>
         <Header title='Horned Beasts' />
+        <FormBeasts />
         <Main beastImages= {this.state.beastImages} openHandler={this.openHandler}/>
         {this.state.display ? <SelectedBeast show= {this.state.showModal} onHide={this.closeHandler} title={this.state.display.title} description={this.state.display.description} image_url={this.state.display.image_url}/> : null }
         <Footer />
